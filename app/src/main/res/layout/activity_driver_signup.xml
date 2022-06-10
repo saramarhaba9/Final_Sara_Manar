@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+tools:context=".student_signup"
+    android:background="@color/background"
+    android:padding="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="إنشاء حساب سائق باص"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/b1"
+            android:layout_marginTop="10dp"
+            android:text="الاسم الثلاثي"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="عمر أحمد آدم"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="رقم الهاتف المحمول"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="0501234567"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:textAlignment="textEnd" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:text="البريد الإلكتروني"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="abc@example.com"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textAlignment="textEnd"
+            tools:ignore="TextContrastCheck" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="كلمة المرور"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="اختر كلمة مرور قوية"
+
+            />
+
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:shadowColor="@color/black"
+            android:text="استمر لتختار منطقتك"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck"
+            android:onClick="newAccount"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driver_login"
+    android:background="@color/background"
+    android:padding="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="تسجيل الدخول"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="البريد الإلكتروني"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="أدخل بريدك الإلكتروني"
+        android:minHeight="48dp"
+        android:inputType="textEmailAddress"
+        tools:ignore="TextContrastCheck"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="كلمة المرور"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="textPassword"
+            android:hint="ادخل كلمة المرور الخاصة بك"
+            android:minHeight="48dp"
+            tools:ignore="TextContrastCheck"/>
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:shadowColor="@color/black"
+        android:text="تسجيل الدخول"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"
+        tools:ignore="TextContrastCheck"
+        android:onClick="logIn"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="نسيت كلمة المرور؟"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="إنشاء حساب جديد"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        />
+    </LinearLayout>
+</RelativeLayout>

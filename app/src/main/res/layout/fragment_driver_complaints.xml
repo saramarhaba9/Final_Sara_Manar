@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driverComplaintsFragment"
+    android:padding="25dp"
+    android:background="@color/background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="الدعم"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الاسم"
+            android:layout_alignRight="@id/b1"
+            android:textSize="18sp"
+
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:inputType="none"
+            android:hint="أحمد سعيد"
+            android:textAlignment="textEnd"
+            android:editable="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رقم الهاتف المحمول"
+            android:layout_marginTop="20dp"
+            android:layout_alignRight="@id/b1"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="0501234567"
+            android:inputType="none"
+            android:editable="false"
+            android:textAlignment="textEnd"
+            tools:ignore="TextContrastCheck"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الشكاوى / المقترحات"
+            android:layout_alignRight="@id/b1"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/comp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="أخبرنا بمشكلتك أو مقترحاتك لتحسين تجربتك"
+
+            tools:ignore="TextContrastCheck"/>
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/black"
+            android:text="أرسل"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            tools:ignore="TextContrastCheck"/>
+    </LinearLayout>
+
+</FrameLayout>

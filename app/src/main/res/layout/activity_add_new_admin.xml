@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_new_admin"
+    android:padding="25dp"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="إنشاء حساب مشرف"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الاسم الثلاثي"
+            android:layout_alignRight="@id/b1"
+            android:textSize="18sp"
+
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:inputType="text"
+            android:hint="عمر أحمد آدم"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رقم الهاتف المحمول"
+            android:layout_marginTop="20dp"
+            android:layout_alignRight="@id/b1"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="0501234567"
+            android:inputType="phone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="البريد الإلكتروني"
+            android:layout_alignRight="@id/b1"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="abc@example.com"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="كلمة المرور"
+            android:layout_alignRight="@id/b1"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="اختر كلمة مرور قوية"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/black"
+            android:text="تسجيل"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            tools:ignore="TextContrastCheck"
+            android:onClick="newAccount" />
+    </LinearLayout>
+
+</RelativeLayout>

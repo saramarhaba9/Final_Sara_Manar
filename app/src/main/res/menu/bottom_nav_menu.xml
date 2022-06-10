@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="الصفحة الرئيسية"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/homeFragment"/>
+
+    <item android:title="الملف الشخصي"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/profileFragment"/>
+
+    <item android:title="الإشعارات"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:id="@+id/notificationsFragment"/>
+
+    <item android:title="الدعم"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:id="@+id/complaintsFragment"/>
+
+    <item android:title="تسجيل الخروج"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:id="@+id/logoutFragment"/>
+</menu>

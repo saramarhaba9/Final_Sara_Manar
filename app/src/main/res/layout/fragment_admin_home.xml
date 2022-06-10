@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminHomeFragment"
+    android:background="@color/background"
+    android:padding="15dp">
+
+
+        <!--         icons-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginVertical="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/qr_code"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/qr_code"
+                    />
+                <ImageView
+                    android:id="@+id/complaints"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/driver_conversation"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="170dp"
+                    android:layout_height="30dp"
+                    android:text="QR code scanned"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="170dp"
+                    android:layout_height="30dp"
+                    android:text=" الشكاوى والاقتراحات"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/add_new_admin"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/add_c"
+                    />
+
+                <ImageView
+                    android:id="@+id/driver_rating"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/driver_rating"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="170dp"
+                    android:layout_height="30dp"
+                    android:text="إضافة مشرف جديد"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="18sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="170dp"
+                    android:layout_height="30dp"
+                    android:text="تقييمات السائقين"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+</FrameLayout>

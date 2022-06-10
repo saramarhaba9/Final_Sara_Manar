@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminProfileFragment"
+    android:background="@color/background"
+    android:padding="25dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="معلوماتي الشخصية"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:contentDescription="student_profile"
+            android:src="@drawable/admin_profile"
+            android:layout_marginTop="10dp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الاسم"
+            android:textSize="18sp"
+
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أحمد عمر"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="البريد الإلكتروني"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="a@hotmail.com"
+            android:textAlignment="textEnd"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رقم الجوال"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="050000000000"
+            android:textAlignment="textEnd"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تغيير كلمة المرور"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/mainColor"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck"/>
+
+    </LinearLayout>
+
+</FrameLayout>
